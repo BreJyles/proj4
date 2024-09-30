@@ -1,0 +1,2206 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.SingleValuePerNestSorting.true...SingleValuePerNestSorting />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='TableauViz_17274561621080' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='satisfaction_data' inline='true' name='federated.0n7rib91ys15vz19frdoh0efe3py' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='satisfaction_data' name='textscan.0d7ojii1m1bz6d170drn51gskolh'>
+            <connection class='textscan' directory='C:/Users/fatim/OneDrive/Escritorio/Class_folder/Projects/proj4/Project/data_engineering' filename='satisfaction_data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0d7ojii1m1bz6d170drn51gskolh' name='satisfaction_data.csv' table='[satisfaction_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+            <column datatype='integer' name='id' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='string' name='Customer Type' ordinal='4' />
+            <column datatype='integer' name='Age' ordinal='5' />
+            <column datatype='string' name='Type of Travel' ordinal='6' />
+            <column datatype='string' name='Class' ordinal='7' />
+            <column datatype='integer' name='Flight Distance' ordinal='8' />
+            <column datatype='integer' name='Inflight wifi service' ordinal='9' />
+            <column datatype='integer' name='Departure/Arrival time convenient' ordinal='10' />
+            <column datatype='integer' name='Ease of Online booking' ordinal='11' />
+            <column datatype='integer' name='Gate location' ordinal='12' />
+            <column datatype='integer' name='Food and drink' ordinal='13' />
+            <column datatype='integer' name='Online boarding' ordinal='14' />
+            <column datatype='integer' name='Seat comfort' ordinal='15' />
+            <column datatype='integer' name='Inflight entertainment' ordinal='16' />
+            <column datatype='integer' name='On-board service' ordinal='17' />
+            <column datatype='integer' name='Leg room service' ordinal='18' />
+            <column datatype='integer' name='Baggage handling' ordinal='19' />
+            <column datatype='integer' name='Checkin service' ordinal='20' />
+            <column datatype='integer' name='Inflight service' ordinal='21' />
+            <column datatype='integer' name='Cleanliness' ordinal='22' />
+            <column datatype='integer' name='Departure Delay in Minutes' ordinal='23' />
+            <column datatype='integer' name='Arrival Delay in Minutes' ordinal='24' />
+            <column datatype='string' name='satisfaction' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0d7ojii1m1bz6d170drn51gskolh' name='satisfaction_data.csv' table='[satisfaction_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+            <column datatype='integer' name='id' ordinal='2' />
+            <column datatype='string' name='Gender' ordinal='3' />
+            <column datatype='string' name='Customer Type' ordinal='4' />
+            <column datatype='integer' name='Age' ordinal='5' />
+            <column datatype='string' name='Type of Travel' ordinal='6' />
+            <column datatype='string' name='Class' ordinal='7' />
+            <column datatype='integer' name='Flight Distance' ordinal='8' />
+            <column datatype='integer' name='Inflight wifi service' ordinal='9' />
+            <column datatype='integer' name='Departure/Arrival time convenient' ordinal='10' />
+            <column datatype='integer' name='Ease of Online booking' ordinal='11' />
+            <column datatype='integer' name='Gate location' ordinal='12' />
+            <column datatype='integer' name='Food and drink' ordinal='13' />
+            <column datatype='integer' name='Online boarding' ordinal='14' />
+            <column datatype='integer' name='Seat comfort' ordinal='15' />
+            <column datatype='integer' name='Inflight entertainment' ordinal='16' />
+            <column datatype='integer' name='On-board service' ordinal='17' />
+            <column datatype='integer' name='Leg room service' ordinal='18' />
+            <column datatype='integer' name='Baggage handling' ordinal='19' />
+            <column datatype='integer' name='Checkin service' ordinal='20' />
+            <column datatype='integer' name='Inflight service' ordinal='21' />
+            <column datatype='integer' name='Cleanliness' ordinal='22' />
+            <column datatype='integer' name='Departure Delay in Minutes' ordinal='23' />
+            <column datatype='integer' name='Arrival Delay in Minutes' ordinal='24' />
+            <column datatype='string' name='satisfaction' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Unnamed: 0</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Type]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Customer Type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of Travel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of Travel]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Type of Travel</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Class]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Class</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flight Distance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Flight Distance]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Flight Distance</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflight wifi service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Inflight wifi service]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Inflight wifi service</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Departure/Arrival time convenient</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Departure/Arrival time convenient]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Departure/Arrival time convenient</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ease of Online booking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ease of Online booking]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Ease of Online booking</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gate location</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gate location]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Gate location</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Food and drink</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Food and drink]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Food and drink</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Online boarding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Online boarding]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Online boarding</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seat comfort</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Seat comfort]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Seat comfort</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflight entertainment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Inflight entertainment]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Inflight entertainment</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>On-board service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[On-board service]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>On-board service</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Leg room service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Leg room service]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Leg room service</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Baggage handling</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Baggage handling]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Baggage handling</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Checkin service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Checkin service]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Checkin service</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Inflight service</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Inflight service]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Inflight service</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cleanliness</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cleanliness]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Cleanliness</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Departure Delay in Minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Departure Delay in Minutes]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Departure Delay in Minutes</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arrival Delay in Minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Arrival Delay in Minutes]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>Arrival Delay in Minutes</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>satisfaction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[satisfaction]</local-name>
+            <parent-name>[satisfaction_data.csv]</parent-name>
+            <remote-alias>satisfaction</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Age (bin)' datatype='integer' name='[Age (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='10' />
+      </column>
+      <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Arrival Delay in Minutes]' role='dimension' type='ordinal' />
+      <column caption='Departure Delay in hours (copy)' datatype='real' name='[Arrival Delay in hours (copy)_1969199003110338573]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Departure Delay in Minutes] /60' />
+      </column>
+      <column caption='f' datatype='real' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(SUM([Calculation_1969199003102556170]))'>
+          <table-calc ordering-field='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003105480715:nk]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation2]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='ATTR([Calculation_1969199003102556170]) / TOTAL(ATTR([Calculation_1969199003102556170]))'>
+          <table-calc ordering-type='Columns' />
+        </calculation>
+      </column>
+      <column caption='Female ' datatype='integer' name='[Calculation_1969199003018473472]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Gender]=&quot;Female&quot; THEN -[id] END' />
+      </column>
+      <column caption='Male' datatype='integer' name='[Calculation_1969199003018551297]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Gender]=&quot;Male&quot; THEN [id] END' />
+      </column>
+      <column caption='Value counts' datatype='integer' name='[Calculation_1969199003021377539]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([id])' />
+      </column>
+      <column caption='Age range' datatype='string' name='[Calculation_1969199003025055749]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Age] &gt;= 0 AND [Age] &lt;= 9 THEN &quot;0-9&quot;&#13;&#10;ELSEIF [Age] &gt;= 10 AND [Age] &lt;= 19 THEN &quot;10-19&quot;&#13;&#10;ELSEIF [Age] &gt;= 20 AND [Age] &lt;= 29 THEN &quot;20-29&quot;&#13;&#10;ELSEIF [Age] &gt;= 30 AND [Age] &lt;= 39 THEN &quot;30-39&quot;&#13;&#10;ELSEIF [Age] &gt;= 40 AND [Age] &lt;= 49 THEN &quot;40-49&quot;&#13;&#10;ELSEIF [Age] &gt;= 50 AND [Age] &lt;= 59 THEN &quot;50-59&quot;&#13;&#10;ELSEIF [Age] &gt;= 60 AND [Age] &lt;= 69 THEN &quot;60-69&quot;&#13;&#10;ELSEIF [Age] &gt;= 70 AND [Age] &lt;= 79 THEN &quot;70-79&quot;&#13;&#10;ELSEIF [Age] &gt;= 80 AND [Age] &lt;= 89 THEN &quot;80-89&quot;&#13;&#10;ELSEIF [Age] &gt;= 90 THEN &quot;90+&quot;&#13;&#10;END' />
+      </column>
+      <column caption='(0)' datatype='integer' name='[Calculation_1969199003027689478]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(0)' />
+      </column>
+      <column caption='Arrival Delay in hours' datatype='real' name='[Calculation_1969199003102556170]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Arrival Delay in Minutes] /60' />
+      </column>
+      <column caption='Arrival Delay hours range ' datatype='string' name='[Calculation_1969199003105480715]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_1969199003102556170] = 0 THEN &quot;No delays&quot;&#13;&#10;ELSEIF [Calculation_1969199003102556170] &gt; 0 AND [Calculation_1969199003102556170] &lt;= 0.5 THEN &quot; 1/2 Hour&quot;&#13;&#10;ELSEIF [Calculation_1969199003102556170] &gt;0.5 AND [Calculation_1969199003102556170] &lt;= 1 THEN &quot;1 Hour&quot;&#13;&#10;ELSEIF [Calculation_1969199003102556170] &gt;1 AND [Calculation_1969199003102556170]&lt;= 2 THEN &quot; 1-2 Hours&quot;&#13;&#10;ELSEIF [Calculation_1969199003102556170] &gt; 2 AND [Calculation_1969199003102556170] &lt;=4 THEN &quot;2-4 Hours&quot;&#13;&#10;ELSE &quot;4+ hours&quot;&#13;&#10;END' />
+      </column>
+      <column caption='avg(1)' datatype='real' name='[Calculation_1969199003327877135]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='avg(1)' />
+      </column>
+      <column caption='Services' datatype='string' name='[Calculation_1969199003336552466]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Baggage handling] &gt; 0 THEN &quot;Baggage Handling&quot;&#13;&#10;ELSEIF [Checkin service] &gt; 0 THEN &quot;Checkin Service&quot;&#13;&#10;ELSEIF [Cleanliness] &gt; 0 THEN &quot;Cleanliness&quot;&#13;&#10;ELSEIF [Departure/Arrival time convenient] &gt; 0 THEN &quot;Dep/Arr Time Convenient&quot;&#13;&#10;ELSEIF [Ease of Online booking] &gt; 0 THEN &quot;Ease of Online Booking&quot;&#13;&#10;ELSEIF [Food and drink] &gt; 0 THEN &quot;Food and Drink&quot;&#13;&#10;ELSEIF [Gate location] &gt; 0 THEN &quot;Gate Location&quot;&#13;&#10;ELSEIF [Inflight entertainment] &gt; 0 THEN &quot;Inflight Entertainment&quot;&#13;&#10;ELSEIF [Inflight service] &gt; 0 THEN &quot;Inflight Service&quot;&#13;&#10;ELSEIF [Inflight wifi service] &gt; 0 THEN &quot;Inflight Wifi Service&quot;&#13;&#10;ELSEIF [Leg room service] &gt; 0 THEN &quot;Leg Room&quot;&#13;&#10;ELSEIF [On-board service] &gt; 0 THEN &quot;On-board Service&quot;&#13;&#10;ELSEIF [Online boarding] &gt; 0 THEN &quot;Online Boarding&quot;&#13;&#10;ELSEIF [Seat comfort] &gt; 0 THEN &quot;Seat Comfort&quot;&#13;&#10;ELSE &quot;Other&quot;&#13;&#10;END' />
+      </column>
+      <column datatype='string' name='[Class]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Customer Type]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;disloyal Customer&quot;' value='Disloyal Customer' />
+        </aliases>
+      </column>
+      <column caption='Departure Delay hours range  ' datatype='string' name='[Delay hours range  (copy)_1969199003110039564]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Arrival Delay in hours (copy)_1969199003110338573] = 0 THEN &quot;No delays&quot;&#13;&#10;ELSEIF [Arrival Delay in hours (copy)_1969199003110338573] &gt; 0 AND [Arrival Delay in hours (copy)_1969199003110338573] &lt;= 0.5 THEN &quot; 1/2 Hour&quot;&#13;&#10;ELSEIF [Arrival Delay in hours (copy)_1969199003110338573] &gt;0.5 AND [Arrival Delay in hours (copy)_1969199003110338573] &lt;= 1 THEN &quot;1 Hour&quot;&#13;&#10;ELSEIF [Arrival Delay in hours (copy)_1969199003110338573] &gt;1 AND [Arrival Delay in hours (copy)_1969199003110338573]&lt;= 2 THEN &quot; 1-2 Hours&quot;&#13;&#10;ELSEIF [Arrival Delay in hours (copy)_1969199003110338573]&gt; 2 AND [Arrival Delay in hours (copy)_1969199003110338573] &lt;=4 THEN &quot;2-4 Hours&quot;&#13;&#10;ELSE &quot;4+ hours&quot;&#13;&#10;END' />
+      </column>
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' name='[Type of Travel]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='satisfaction_data.csv' datatype='table' name='[__tableau_internal_object_id__].[satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Satisfaction' datatype='string' name='[satisfaction]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;neutral or dissatisfied&quot;' value='Neutral or Dissatisfied' />
+          <alias key='&quot;satisfied&quot;' value='Satisfied' />
+        </aliases>
+      </column>
+      <column-instance column='[Arrival Delay in hours (copy)_1969199003110338573]' derivation='Count' name='[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1969199003102556170]' derivation='Count' name='[cnt:Calculation_1969199003102556170:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Arrival Delay in hours (copy)_1969199003110338573]' derivation='CountD' name='[ctd:Arrival Delay in hours (copy)_1969199003110338573:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1969199003105480715]' derivation='None' name='[none:Calculation_1969199003105480715:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Class]' derivation='None' name='[none:Class:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Customer Type]' derivation='None' name='[none:Customer Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Type of Travel]' derivation='None' name='[none:Type of Travel:nk]' pivot='key' type='nominal' />
+      <column-instance column='[satisfaction]' derivation='None' name='[none:satisfaction:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Arrival Delay in hours (copy)_1969199003110338573]' derivation='Count' name='[pcto:cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Arrival Delay in hours (copy)_1969199003110338573]' derivation='Sum' name='[sum:Arrival Delay in hours (copy)_1969199003110338573:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1969199003327877135]' derivation='User' name='[usr:Calculation_1969199003327877135:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/fatim/AppData/Local/Temp/TableauTemp/#TableauTemp_1swggh51maup5h13dph290zikd4h.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>129880</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unnamed: 0</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Unnamed: 0]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unnamed: 0</remote-alias>
+              <ordinal>1</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109261</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>129880</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>3</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer Type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>5</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of Travel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of Travel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of Travel</remote-alias>
+              <ordinal>6</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Class</remote-alias>
+              <ordinal>7</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flight Distance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Flight Distance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flight Distance</remote-alias>
+              <ordinal>8</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6062</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Inflight wifi service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Inflight wifi service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Inflight wifi service</remote-alias>
+              <ordinal>9</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Departure/Arrival time convenient</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Departure/Arrival time convenient]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Departure/Arrival time convenient</remote-alias>
+              <ordinal>10</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ease of Online booking</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Ease of Online booking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ease of Online booking</remote-alias>
+              <ordinal>11</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gate location</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gate location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gate location</remote-alias>
+              <ordinal>12</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Food and drink</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Food and drink]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Food and drink</remote-alias>
+              <ordinal>13</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Online boarding</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Online boarding]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Online boarding</remote-alias>
+              <ordinal>14</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Seat comfort</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Seat comfort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Seat comfort</remote-alias>
+              <ordinal>15</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Inflight entertainment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Inflight entertainment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Inflight entertainment</remote-alias>
+              <ordinal>16</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>On-board service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[On-board service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>On-board service</remote-alias>
+              <ordinal>17</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Leg room service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Leg room service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Leg room service</remote-alias>
+              <ordinal>18</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Baggage handling</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Baggage handling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Baggage handling</remote-alias>
+              <ordinal>19</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Checkin service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Checkin service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Checkin service</remote-alias>
+              <ordinal>20</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Inflight service</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Inflight service]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Inflight service</remote-alias>
+              <ordinal>21</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cleanliness</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cleanliness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cleanliness</remote-alias>
+              <ordinal>22</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Departure Delay in Minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Departure Delay in Minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Departure Delay in Minutes</remote-alias>
+              <ordinal>23</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>602</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arrival Delay in Minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Arrival Delay in Minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arrival Delay in Minutes</remote-alias>
+              <ordinal>24</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>626</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>satisfaction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[satisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>satisfaction</remote-alias>
+              <ordinal>25</ordinal>
+              <family>satisfaction_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#9c9290'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#f7b6d2'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Customer Type:nk]' type='palette'>
+            <map to='#ccd5ae'>
+              <bucket>&quot;Loyal Customer&quot;</bucket>
+            </map>
+            <map to='#faedcd'>
+              <bucket>&quot;disloyal Customer&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Class:nk]' type='palette'>
+            <map to='#ccd5ae'>
+              <bucket>&quot;Business&quot;</bucket>
+            </map>
+            <map to='#d4a373'>
+              <bucket>&quot;Eco&quot;</bucket>
+            </map>
+            <map to='#faedcd'>
+              <bucket>&quot;Eco Plus&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Type of Travel:nk]' type='palette'>
+            <map to='#ccd5ae'>
+              <bucket>&quot;Business travel&quot;</bucket>
+            </map>
+            <map to='#faedcd'>
+              <bucket>&quot;Personal Travel&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:satisfaction:nk]' type='palette'>
+            <map to='#ccd5ae'>
+              <bucket>&quot;neutral or dissatisfied&quot;</bucket>
+            </map>
+            <map to='#faedcd'>
+              <bucket>&quot;satisfied&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_1969199003105480715:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot; 1 Hour&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;8-16 Hours&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;4-8 Hours&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;4+ hours&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;1 Hour&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;No delays&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2-4 Hours&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;16+ hours&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; 1-2 Hours&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot; 1/2 Hour&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:satisfaction:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#76b7b2'>
+              <multibucket>
+                <bucket>&quot;satisfied&quot;</bucket>
+                <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ccd5ae'>
+              <multibucket>
+                <bucket>&quot;neutral or dissatisfied&quot;</bucket>
+                <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ccd5ae'>
+              <multibucket>
+                <bucket>&quot;neutral or dissatisfied&quot;</bucket>
+                <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003102556170:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#ccd5ae'>
+              <multibucket>
+                <bucket>&quot;neutral or dissatisfied&quot;</bucket>
+                <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#d5d5d5'>
+              <multibucket>
+                <bucket>&quot;neutral or dissatisfied&quot;</bucket>
+                <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#e15759'>
+              <multibucket>
+                <bucket>&quot;satisfied&quot;</bucket>
+                <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003102556170:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#faedcd'>
+              <multibucket>
+                <bucket>&quot;satisfied&quot;</bucket>
+                <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#faedcd'>
+              <multibucket>
+                <bucket>&quot;satisfied&quot;</bucket>
+                <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[ctd:Arrival Delay in hours (copy)_1969199003110338573:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Arrival Delay in hours (copy)_1969199003110338573:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='satisfaction_data.csv' id='satisfaction_data.csv_52BC3ADAD6574E9896345B858A159912'>
+            <properties context=''>
+              <relation connection='textscan.0d7ojii1m1bz6d170drn51gskolh' name='satisfaction_data.csv' table='[satisfaction_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Unnamed: 0' ordinal='1' />
+                  <column datatype='integer' name='id' ordinal='2' />
+                  <column datatype='string' name='Gender' ordinal='3' />
+                  <column datatype='string' name='Customer Type' ordinal='4' />
+                  <column datatype='integer' name='Age' ordinal='5' />
+                  <column datatype='string' name='Type of Travel' ordinal='6' />
+                  <column datatype='string' name='Class' ordinal='7' />
+                  <column datatype='integer' name='Flight Distance' ordinal='8' />
+                  <column datatype='integer' name='Inflight wifi service' ordinal='9' />
+                  <column datatype='integer' name='Departure/Arrival time convenient' ordinal='10' />
+                  <column datatype='integer' name='Ease of Online booking' ordinal='11' />
+                  <column datatype='integer' name='Gate location' ordinal='12' />
+                  <column datatype='integer' name='Food and drink' ordinal='13' />
+                  <column datatype='integer' name='Online boarding' ordinal='14' />
+                  <column datatype='integer' name='Seat comfort' ordinal='15' />
+                  <column datatype='integer' name='Inflight entertainment' ordinal='16' />
+                  <column datatype='integer' name='On-board service' ordinal='17' />
+                  <column datatype='integer' name='Leg room service' ordinal='18' />
+                  <column datatype='integer' name='Baggage handling' ordinal='19' />
+                  <column datatype='integer' name='Checkin service' ordinal='20' />
+                  <column datatype='integer' name='Inflight service' ordinal='21' />
+                  <column datatype='integer' name='Cleanliness' ordinal='22' />
+                  <column datatype='integer' name='Departure Delay in Minutes' ordinal='23' />
+                  <column datatype='integer' name='Arrival Delay in Minutes' ordinal='24' />
+                  <column datatype='string' name='satisfaction' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Arrival Delay '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#606b76'>&lt;Sheet Name&gt; in Hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='satisfaction_data' name='federated.0n7rib91ys15vz19frdoh0efe3py' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7rib91ys15vz19frdoh0efe3py'>
+            <column aggregation='Sum' datatype='integer' name='[Arrival Delay in Minutes]' role='dimension' type='ordinal' />
+            <column caption='Arrival Delay in hours' datatype='real' name='[Calculation_1969199003102556170]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Arrival Delay in Minutes] /60' />
+            </column>
+            <column caption='Arrival Delay hours range ' datatype='string' name='[Calculation_1969199003105480715]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_1969199003102556170] = 0 THEN &quot;No delays&quot;&#13;&#10;ELSEIF [Calculation_1969199003102556170] &gt; 0 AND [Calculation_1969199003102556170] &lt;= 0.5 THEN &quot; 1/2 Hour&quot;&#13;&#10;ELSEIF [Calculation_1969199003102556170] &gt;0.5 AND [Calculation_1969199003102556170] &lt;= 1 THEN &quot;1 Hour&quot;&#13;&#10;ELSEIF [Calculation_1969199003102556170] &gt;1 AND [Calculation_1969199003102556170]&lt;= 2 THEN &quot; 1-2 Hours&quot;&#13;&#10;ELSEIF [Calculation_1969199003102556170] &gt; 2 AND [Calculation_1969199003102556170] &lt;=4 THEN &quot;2-4 Hours&quot;&#13;&#10;ELSE &quot;4+ hours&quot;&#13;&#10;END' />
+            </column>
+            <column caption='avg(1)' datatype='real' name='[Calculation_1969199003327877135]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg(1)' />
+            </column>
+            <column-instance column='[Calculation_1969199003102556170]' derivation='Count' name='[cnt:Calculation_1969199003102556170:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1969199003105480715]' derivation='None' name='[none:Calculation_1969199003105480715:nk]' pivot='key' type='nominal' />
+            <column-instance column='[satisfaction]' derivation='None' name='[none:satisfaction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1969199003102556170]' derivation='Count' name='[pcto:cnt:Calculation_1969199003102556170:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column caption='Satisfaction' datatype='string' name='[satisfaction]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;neutral or dissatisfied&quot;' value='Neutral or Dissatisfied' />
+                <alias key='&quot;satisfied&quot;' value='Satisfied' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_1969199003327877135]' derivation='User' name='[usr:Calculation_1969199003327877135:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]'>
+            <groupfilter function='level-members' level='[none:satisfaction:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003105480715:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003102556170:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003102556170:qk]' field-type='quantitative' range-type='independent' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003102556170:qk]' scope='cols' value='false' />
+            <encoding attr='space' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]' scope='cols' value='false' />
+            <format attr='render-fold-reversed' value='true' />
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003102556170:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' />
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:Calculation_1969199003102556170:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='color' value='#606b76' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Arrival Delay hours range :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003105480715:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Satisfaction:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#e5e5e5' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003105480715:nk]</rows>
+        <cols>([federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003102556170:qk] + [federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk])</cols>
+      </table>
+      <simple-id uuid='{98E356E3-0C56-4FBD-817C-9214D4401961}' />
+    </worksheet>
+    <worksheet name='Customer Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='satisfaction_data' name='federated.0n7rib91ys15vz19frdoh0efe3py' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7rib91ys15vz19frdoh0efe3py'>
+            <column datatype='string' name='[Customer Type]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;disloyal Customer&quot;' value='Disloyal Customer' />
+              </aliases>
+            </column>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Customer Type]' derivation='None' name='[none:Customer Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[satisfaction]' derivation='None' name='[none:satisfaction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='Count' name='[pcto:cnt:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Satisfaction' datatype='string' name='[satisfaction]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;neutral or dissatisfied&quot;' value='Neutral or Dissatisfied' />
+                <alias key='&quot;satisfied&quot;' value='Satisfied' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:satisfaction:nk]' member='&quot;satisfied&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Customer Type:nk]' />
+              <wedge-size column='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:id:qk]' />
+              <size column='[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:id:qk]' />
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{122D0DEE-31FC-4E02-A33F-0C1E1DE0C69F}' />
+    </worksheet>
+    <worksheet name='Departure Delay'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#606b76'>&lt;Sheet Name&gt; in Hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='satisfaction_data' name='federated.0n7rib91ys15vz19frdoh0efe3py' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7rib91ys15vz19frdoh0efe3py'>
+            <column caption='Departure Delay in hours (copy)' datatype='real' name='[Arrival Delay in hours (copy)_1969199003110338573]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Departure Delay in Minutes] /60' />
+            </column>
+            <column caption='avg(1)' datatype='real' name='[Calculation_1969199003327877135]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='avg(1)' />
+            </column>
+            <column caption='Departure Delay hours range  ' datatype='string' name='[Delay hours range  (copy)_1969199003110039564]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Arrival Delay in hours (copy)_1969199003110338573] = 0 THEN &quot;No delays&quot;&#13;&#10;ELSEIF [Arrival Delay in hours (copy)_1969199003110338573] &gt; 0 AND [Arrival Delay in hours (copy)_1969199003110338573] &lt;= 0.5 THEN &quot; 1/2 Hour&quot;&#13;&#10;ELSEIF [Arrival Delay in hours (copy)_1969199003110338573] &gt;0.5 AND [Arrival Delay in hours (copy)_1969199003110338573] &lt;= 1 THEN &quot;1 Hour&quot;&#13;&#10;ELSEIF [Arrival Delay in hours (copy)_1969199003110338573] &gt;1 AND [Arrival Delay in hours (copy)_1969199003110338573]&lt;= 2 THEN &quot; 1-2 Hours&quot;&#13;&#10;ELSEIF [Arrival Delay in hours (copy)_1969199003110338573]&gt; 2 AND [Arrival Delay in hours (copy)_1969199003110338573] &lt;=4 THEN &quot;2-4 Hours&quot;&#13;&#10;ELSE &quot;4+ hours&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='integer' name='[Departure Delay in Minutes]' role='measure' type='quantitative' />
+            <column-instance column='[Arrival Delay in hours (copy)_1969199003110338573]' derivation='Count' name='[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delay hours range  (copy)_1969199003110039564]' derivation='None' name='[none:Delay hours range  (copy)_1969199003110039564:nk]' pivot='key' type='nominal' />
+            <column-instance column='[satisfaction]' derivation='None' name='[none:satisfaction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Arrival Delay in hours (copy)_1969199003110338573]' derivation='Count' name='[pcto:cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column caption='Satisfaction' datatype='string' name='[satisfaction]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;neutral or dissatisfied&quot;' value='Neutral or Dissatisfied' />
+                <alias key='&quot;satisfied&quot;' value='Satisfied' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_1969199003327877135]' derivation='User' name='[usr:Calculation_1969199003327877135:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]'>
+            <groupfilter function='level-members' level='[none:satisfaction:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Delay hours range  (copy)_1969199003110039564:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='render-fold-reversed' value='true' />
+            <format attr='stroke-size' value='0' />
+            <encoding attr='space' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Arrival Delay hours range :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003105480715:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Satisfaction:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#e5e5e5' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' />
+              <color column='[federated.0n7rib91ys15vz19frdoh0efe3py].[:Measure Names]' />
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Arrival Delay hours range :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003105480715:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Satisfaction:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#606b76'>&lt;</run>
+                <run fontalignment='1' fontcolor='#606b76'>[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:Arrival Delay in hours (copy)_1969199003110338573:qk]</run>
+                <run fontalignment='1' fontcolor='#606b76'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e5e5e5' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Arrival Delay hours range :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003105480715:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Satisfaction:&#9;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#e5e5e5' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Delay hours range  (copy)_1969199003110039564:nk]</rows>
+        <cols>([federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Arrival Delay in hours (copy)_1969199003110338573:qk] + [federated.0n7rib91ys15vz19frdoh0efe3py].[usr:Calculation_1969199003327877135:qk])</cols>
+      </table>
+      <simple-id uuid='{9C0D316B-735E-45C4-9514-09AD019E8A76}' />
+    </worksheet>
+    <worksheet name='Flying Class'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='satisfaction_data' name='federated.0n7rib91ys15vz19frdoh0efe3py' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7rib91ys15vz19frdoh0efe3py'>
+            <column datatype='string' name='[Class]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Class]' derivation='None' name='[none:Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[satisfaction]' derivation='None' name='[none:satisfaction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='Count' name='[pcto:cnt:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Satisfaction' datatype='string' name='[satisfaction]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;neutral or dissatisfied&quot;' value='Neutral or Dissatisfied' />
+                <alias key='&quot;satisfied&quot;' value='Satisfied' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:satisfaction:nk]' member='&quot;satisfied&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Class:nk]' />
+              <wedge-size column='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:id:qk]' />
+              <size column='[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:id:qk]' />
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8DE18F66-556E-42F7-BC19-7757DFD9D98A}' />
+    </worksheet>
+    <worksheet name='Overall Satisfaction'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#606b76'>Overall Satisfaction</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='satisfaction_data' name='federated.0n7rib91ys15vz19frdoh0efe3py' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7rib91ys15vz19frdoh0efe3py'>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[satisfaction]' derivation='None' name='[none:satisfaction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='Count' name='[pcto:cnt:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Satisfaction' datatype='string' name='[satisfaction]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;neutral or dissatisfied&quot;' value='Neutral or Dissatisfied' />
+                <alias key='&quot;satisfied&quot;' value='Satisfied' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' />
+              <wedge-size column='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:id:qk]' />
+              <size column='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:id:qk]' />
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:id:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#606b76'>&lt;</run>
+                <run fontcolor='#606b76'>[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:id:qk]</run>
+                <run fontcolor='#606b76'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{75D11764-0C23-4F23-9860-20600B1D1EDC}' />
+    </worksheet>
+    <worksheet name='Pssanger age/gender distribution 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Age Range</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='satisfaction_data' name='federated.0n7rib91ys15vz19frdoh0efe3py' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7rib91ys15vz19frdoh0efe3py'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Female ' datatype='integer' name='[Calculation_1969199003018473472]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Gender]=&quot;Female&quot; THEN -[id] END' />
+            </column>
+            <column caption='Male' datatype='integer' name='[Calculation_1969199003018551297]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Gender]=&quot;Male&quot; THEN [id] END' />
+            </column>
+            <column caption='Age range' datatype='string' name='[Calculation_1969199003025055749]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Age] &gt;= 0 AND [Age] &lt;= 9 THEN &quot;0-9&quot;&#13;&#10;ELSEIF [Age] &gt;= 10 AND [Age] &lt;= 19 THEN &quot;10-19&quot;&#13;&#10;ELSEIF [Age] &gt;= 20 AND [Age] &lt;= 29 THEN &quot;20-29&quot;&#13;&#10;ELSEIF [Age] &gt;= 30 AND [Age] &lt;= 39 THEN &quot;30-39&quot;&#13;&#10;ELSEIF [Age] &gt;= 40 AND [Age] &lt;= 49 THEN &quot;40-49&quot;&#13;&#10;ELSEIF [Age] &gt;= 50 AND [Age] &lt;= 59 THEN &quot;50-59&quot;&#13;&#10;ELSEIF [Age] &gt;= 60 AND [Age] &lt;= 69 THEN &quot;60-69&quot;&#13;&#10;ELSEIF [Age] &gt;= 70 AND [Age] &lt;= 79 THEN &quot;70-79&quot;&#13;&#10;ELSEIF [Age] &gt;= 80 AND [Age] &lt;= 89 THEN &quot;80-89&quot;&#13;&#10;ELSEIF [Age] &gt;= 90 THEN &quot;90+&quot;&#13;&#10;END' />
+            </column>
+            <column caption='(0)' datatype='integer' name='[Calculation_1969199003027689478]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(0)' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1969199003018473472]' derivation='Count' name='[cnt:Calculation_1969199003018473472:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1969199003018551297]' derivation='Count' name='[cnt:Calculation_1969199003018551297:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1969199003025055749]' derivation='None' name='[none:Calculation_1969199003025055749:nk]' pivot='key' type='nominal' />
+            <column-instance column='[satisfaction]' derivation='None' name='[none:satisfaction:nk]' pivot='key' type='nominal' />
+            <column caption='Satisfaction' datatype='string' name='[satisfaction]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;neutral or dissatisfied&quot;' value='Neutral or Dissatisfied' />
+                <alias key='&quot;satisfied&quot;' value='Satisfied' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_1969199003018473472]' derivation='Sum' name='[sum:Calculation_1969199003018473472:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1969199003018551297]' derivation='Sum' name='[sum:Calculation_1969199003018551297:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1969199003027689478]' derivation='Sum' name='[sum:Calculation_1969199003027689478:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:satisfaction:nk]' member='&quot;satisfied&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]' shelf='rows' />
+          </_.fcp.SingleValuePerNestSorting.true...single-value-per-nest-shelf-sorts>
+          <slices>
+            <column>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003018473472:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003027689478:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003018551297:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age range:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Female :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018473472:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Male:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018551297:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003018473472:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018473472:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age range:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Female :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018473472:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>&lt;</run>
+                <run bold='true'>[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018473472:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#faedcd' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003018551297:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018551297:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age range:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Male:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018551297:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>&lt;</run>
+                <run bold='true'>[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018551297:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d4a373' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003027689478:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Age range:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Female :&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018473472:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Male:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:Calculation_1969199003018551297:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>&lt;</run>
+                <run bold='true'>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='mark-transparency' value='0' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Calculation_1969199003025055749:nk]</rows>
+        <cols>([federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003018473472:qk] + ([federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003027689478:qk] + [federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Calculation_1969199003018551297:qk]))</cols>
+      </table>
+      <simple-id uuid='{B874DF79-4ED9-4938-91B3-39E28469F18E}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='satisfaction_data' name='federated.0n7rib91ys15vz19frdoh0efe3py' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7rib91ys15vz19frdoh0efe3py'>
+            <column datatype='integer' name='[Baggage handling]' role='measure' type='quantitative' />
+            <column-instance column='[Baggage handling]' derivation='CountD' name='[ctd:Baggage handling:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Baggage handling]' derivation='Sum' name='[sum:Baggage handling:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0n7rib91ys15vz19frdoh0efe3py].[sum:Baggage handling:qk]</rows>
+        <cols>[federated.0n7rib91ys15vz19frdoh0efe3py].[ctd:Baggage handling:qk]</cols>
+      </table>
+      <simple-id uuid='{F378E2A3-0845-4D55-9905-01F621312F4E}' />
+    </worksheet>
+    <worksheet name='Type of Travel'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='satisfaction_data' name='federated.0n7rib91ys15vz19frdoh0efe3py' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n7rib91ys15vz19frdoh0efe3py'>
+            <column aggregation='CountD' datatype='string' name='[Type of Travel]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Type of Travel]' derivation='None' name='[none:Type of Travel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[satisfaction]' derivation='None' name='[none:satisfaction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='Count' name='[pcto:cnt:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Satisfaction' datatype='string' name='[satisfaction]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;neutral or dissatisfied&quot;' value='Neutral or Dissatisfied' />
+                <alias key='&quot;satisfied&quot;' value='Satisfied' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:satisfaction:nk]' member='&quot;satisfied&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Type of Travel:nk]' />
+              <wedge-size column='[federated.0n7rib91ys15vz19frdoh0efe3py].[cnt:id:qk]' />
+              <text column='[federated.0n7rib91ys15vz19frdoh0efe3py].[pcto:cnt:id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8BFB9356-E271-4E68-8228-5B9FE52EB327}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Pssanger age/gender distribution 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{925E8617-5CA0-446B-A338-2E0F643DE251}' />
+    </window>
+    <window class='worksheet' name='Customer Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Customer Type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C0DEF6B2-BF1C-4E21-A616-2A8AEB8388A9}' />
+    </window>
+    <window class='worksheet' name='Flying Class'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Class:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BEDFAE50-AE6F-459F-9C2B-56388CCA04D2}' />
+    </window>
+    <window class='worksheet' name='Type of Travel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:Type of Travel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BB4142A5-EE25-45D6-A68D-8377132CB9D3}' />
+    </window>
+    <window class='worksheet' name='Overall Satisfaction'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7CA167D9-006F-4EF8-B7DB-5213B3E4003B}' />
+    </window>
+    <window class='worksheet' name='Arrival Delay '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0A309D42-5F6A-4082-B26D-B57952E85E17}' />
+    </window>
+    <window class='worksheet' name='Departure Delay'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0n7rib91ys15vz19frdoh0efe3py].[none:satisfaction:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F2F629D6-63C3-4098-831A-9260D28BF710}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28138549-A670-4C23-A717-4BE6C2C2604A}' />
+    </window>
+  </windows>
+</workbook>
