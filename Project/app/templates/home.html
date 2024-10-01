@@ -74,44 +74,179 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label class="col-form-label" for="fare">Fare</label>
-                            <input type="text" class="form-control" value="25.50" id="fare">
+                            <label class="col-form-label" for="distance">Distance (miles)</label>
+                            <input type="text" class="form-control" value="200" id="distance">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="delay_d">Departure Delay in Minutes</label>
+                            <input type="text" class="form-control" value="0" id="delay_d">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="delay_a">Arrival Delay in Minutes</label>
+                            <input type="text" class="form-control" value="0" id="delay_a">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label class="col-form-label" for="familySize">Family Size</label>
-                            <input type="text" class="form-control" value="2" id="familySize">
-                        </div>
-                        <div class="form-group">
-                            <label class="col-form-label" for="pclass">Passenger Class</label>
-                            <select id="pclass">
-                                <option value="1">First Class</option>
-                                <option value="2">Second Class</option>
-                                <option value="3">Third Class</option>
+                            <label class="col-form-label" for="wifi">Inflight Wifi Service Rating</label>
+                            <select id="wifi">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label class="col-form-label" for="embarked">Embarked Port</label>
-                            <select id="embarked">
-                                <option value="C">Cherbourg</option>
-                                <option value="Q">Queenstown</option>
-                                <option value="S">Southampton</option>
+                            <label class="col-form-label" for="time_convenience">Departure/Arrival Time Convenience Rating</label>
+                            <select id="time_convenience">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label class="col-form-label" for="has_cabin">Has Cabin?</label>
-                            <select id="has_cabin">
-                                <option value="0">False</option>
-                                <option value="1">True</option>
+                            <label class="col-form-label" for="booking">Ease of Online Booking Rating</label>
+                            <select id="booking">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
                             </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="gate">Gate Location Rating</label>
+                            <select id="gate">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="food">Food and Drink Rating</label>
+                            <select id="food">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="boarding">Online Boarding Rating</label>
+                            <select id="boarding">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="comfort">Seat Comfort Rating</label>
+                            <select id="comfort">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="entertainment">Inflight Entertainment Rating</label>
+                            <select id="entertainment">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="onboard_service">On-Board Service Rating</label>
+                            <select id="onboard_service">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="legroom">Leg Room Service Rating</label>
+                            <select id="legroom">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="baggage">Baggage Handling Rating</label>
+                            <select id="baggage">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="checkin_service">Checkin Service Rating</label>
+                            <select id="checkin_service">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="inflight_service">Inflight Service Rating</label>
+                            <select id="inflight_service">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <div class="form-group">
+                                <label class="col-form-label" for="cleanliness">Cleanliness Rating</label>
+                                <select id="cleanliness">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-primary" id="filter">Make Prediction!</button>
+                        <button type="button" class="btn btn-primary" id="filter">Predict Customer Satisfaction!</button>
                     </div>
                 </div>
             </div>

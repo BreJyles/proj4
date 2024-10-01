@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 
 // call Flask API endpoint
-function makePredictions() {
+function makePrediction() {
     let gender = $("#gender").val();
     let customer_type = $("#customer_type")
     let age = $("#age").val();
@@ -64,7 +64,7 @@ function makePredictions() {
     // Perform a POST request to the query URL
     $.ajax({
         type: "POST",
-        url: "/makePredictions",
+        url: "/makePrediction",
         contentType: 'application/json;charset=UTF-8',
         data: JSON.stringify({ "data": payload }),
         success: function(returnedData) {
