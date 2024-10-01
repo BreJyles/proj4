@@ -1,57 +1,81 @@
-from flask import Flask, jsonify, render_template
-import pandas as pd
-import numpy as np
-from sqlHelper import SQLHelper
+from flask import Flask, render_template, redirect, request, jsonify
+from modelHelper import ModelHelper
 
-#################################################
-# Flask Setup
-#################################################
+# Create an instance of Flask
 app = Flask(__name__)
-sql = SQLHelper()
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
-#################################################
-# Flask Routes
-#################################################
+modelHelper = ModelHelper()
 
-# HTML ROUTES
+# Route to render index.html template using data from Mongo
 @app.route("/")
-def index():
+def home():
+    # Return template and data
     return render_template("home.html")
-
-@app.route("/dashboard")
-def dashboard():
-    return render_template("dashboard.html")
-
-@app.route("/map")
-def map():
-    return render_template("map.html")
 
 @app.route("/about_us")
 def about_us():
+    # Return template and data
     return render_template("about_us.html")
 
-# SQL Queries
-@app.route("/api/v1.0/get_dashboard/<user_selection>")
-def get_dashboard(user_selection):
-    bar_data = sql.get_bar(user_selection)
-    sunburst_data = sql.get_sunburst()
+@app.route("/tableau")
+def tableau():
+    # Return template and data
+    return render_template("tableau.html")
 
-    data = {
-        "bar_data": bar_data,
-        "sunburst_data": sunburst_data
-    }
-    return(jsonify(data))
+@app.route("/makePrediction", methods=["POST"])
+def make_prediction():
+    content = request.json["data"]
+    print(content)
 
-@app.route("/api/v1.0/get_map/<year_min>/<year_max>")
-def get_map(year_min, year_max):
-    year_min = int(year_min) # cast to int
-    year_max = int(year_max) # cast to int
-    map_data = sql.get_map(year_min, year_max)
+    # parse
+    gender = content["gender"]
+    customer_type = content["customer_type"]
+    age = float(content["age"])
+    travel_type = content["travel_type"]
+    travel_class = content["travel_class"]
+    distance = float(content["distance"])
+    wifi = int(content["wifi"])
+    time_convenience = int(content["time_convenience"])
+    booking = int(content["booking"])
+    gate = int(content["gate"])
+    food = int(content["food"])
+    boarding = int(content["boarding"])
+    comfort = int(content["comfort"])
+    entertainment = int(content["entertainment"])
+    onboard_service = int(content["onboard_service"])
+    legroom = int(content["legroom"])
+    baggage = int(content["baggage"])
+    checkin_service = int(content["checkin_service"])
+    inflight_service = int(content["inflight_service"])
+    cleanliness = int(content["cleanliness"])
+    delay_d = float(content["delay_d"])
+    delay_a = float(content["delay_a"])
 
-    return(jsonify(map_data))
+    preds = modelHelper.makePrediction(gender, customer_type, age, travel_type, 
+                                       travel_class, distance, wifi, time_convenience, 
+                                       booking, gate, food, boarding, comfort, 
+                                       entertainment, onboard_service, legroom, 
+                                       baggage, checkin_service, inflight_service, 
+                                       cleanliness, delay_d, delay_a)
+    
+    return(jsonify({"ok": True, "prediction": str(preds)}))
 
 
+#############################################################
 
-# Run the App
-if __name__ == '__main__':
+@app.after_request
+def add_header(r):
+    """
+    Add headers to both force latest IE rendering engine or Chrome Frame,
+    and also to cache the rendered page for 10 minutes.
+    """
+    r.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
+    r.headers["Cache-Control"] = "no-cache, no-store, must-revalidate, public, max-age=0"
+    r.headers["Pragma"] = "no-cache"
+    r.headers["Expires"] = "0"
+    return r
+
+#main
+if __name__ == "__main__":
     app.run(debug=True)
