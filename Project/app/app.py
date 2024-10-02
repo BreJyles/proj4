@@ -13,6 +13,11 @@ def home():
     # Return template and data
     return render_template("home.html")
 
+@app.route("/ml")
+def ml():
+    # Return template and data
+    return render_template("ml.html")
+
 @app.route("/about_us")
 def about_us():
     # Return template and data
@@ -27,6 +32,11 @@ def tableau():
 def tableau2():
     # Return template and data
     return render_template("tableau2.html")
+
+@app.route("/works_cited")
+def works_cited():
+    # Return template and data
+    return render_template("works_cited.html")
 
 @app.route("/makePrediction", methods=["POST"])
 def make_prediction():
