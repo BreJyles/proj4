@@ -18,7 +18,9 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Airline Satisfaction</a>
+          <a class="navbar-brand" href="/">
+            <img src="static/img/logo.png" alt="Logo" style="height: 50px;">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,14 +55,103 @@
     <!-- add spacing -->
     <br/>
 
-    <!-- Dashboard -->
-     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>This is the About Us Page.</h1>
-            </div>
-        </div>
-     </div>
+    <!-- content -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          document.body.style.backgroundColor = "#d1e7dd"; // Light mint green
+      });
+  </script>
+  <div class="row">
+      <h1 class="col-md-12 text-center">About Us</h1>
+  </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Create a function to generate each container
+          function createContainer(imageSrc, title, content, isImageLeft) {
+              const container = document.createElement("div");
+              container.style.display = "flex"; // Use flexbox for layout
+              container.style.alignItems = "center"; // Align items at the center
+              container.style.margin = "20px auto"; // Center the container and add space gap
+              container.style.height = "400px"; // Set the height of the container
+              container.style.width = "80%"; // Set container width to 80% of the screen
+              container.style.maxWidth = "1200px"; // Optional: set a max width for larger screens
+              container.style.borderRadius = "10px"; // Optional: add rounded corners
+              container.style.overflow = "hidden"; // Ensure no overflow
+              container.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"; // Optional: add a shadow for better visibility
+              // Create and add the image
+              const imgContainer = document.createElement("div");
+              imgContainer.style.flex = "0 0 40%"; // Image occupies 40% of the container
+              
+              
+              const img = document.createElement("img");
+              img.src = imageSrc; // Set image source
+              img.alt = title; // Alt text for accessibility
+              img.style.width = "100%"; // Full width of the container
+              img.style.height = "auto"; // Maintain aspect ratio
+              img.style.maxHeight = "250px"; // Set a maximum height for uniformity
+              img.style.borderRadius = "15px"; // Make the round
+              img.style.objectFit = "contain"; // Cover the container
+              
+              imgContainer.appendChild(img);
+              container.appendChild(imgContainer);
+
+              // Create and add the text block
+              const textBlock = document.createElement("div");
+              textBlock.style.flex = "1"; // Text block occupies remaining space
+              textBlock.style.padding = "20px"; // Add padding
+              textBlock.style.backgroundColor = "#82d4be"; // Background color
+              textBlock.style.color = "white"; // Text color
+              textBlock.style.borderRadius = "10px"; // Rounded corners
+
+              // Title
+              const titleElement = document.createElement("h2");
+              titleElement.innerText = title;
+              titleElement.style.fontSize = "24px"; // Title size
+              titleElement.style.color = "white";
+              titleElement.style.margin = "0 0 10px 0"; // Margin for spacing
+
+              // Content
+              const contentElement = document.createElement("p");
+              contentElement.innerText = content;
+              contentElement.style.fontSize = "18px"; // Content size
+              contentElement.style.margin = "0"; // No margin
+
+              textBlock.appendChild(titleElement);
+              textBlock.appendChild(contentElement);
+              container.appendChild(textBlock);
+
+              // Append the container to the body
+              document.body.appendChild(container);
+          }
+
+          // Image sources, titles, and content
+          const containersData = [
+              {
+                  image: "static/img/Fatima.jpeg",
+                  title: "Fatima Rodriguez",
+                  content: "This is me in Tel Aviv two years ago. It hurts my heart to see in the news what is happening there these days. It is such a beautiful place. Regarding my flight experience, I must say it was a long trip. I had to take two planes: one from Houston to Germany and another from Germany to Tel Aviv. Fortunately, I made it to my destination on time.The return was a nightmare for me. The airport in Tel Aviv does not allow you to check in until three hours before your flight, and I arrived really early. Not only was I there early, but I was also hungry, only to find out that it was the Sabbath and 90% of the food establishments were closed. When I finally checked in, I discovered my flight was delayed, so I had to wait an additional two hours. After 16 hours of flying, I was happy to be back home after an amazing vacation.",
+                  isImageLeft: true // Image on the left
+              },
+              {
+                  image: "static/img/Henry.jpg",
+                  title: "Henry White",
+                  content: "As part of my current role, I have the privelege to work on an event planning team and coordinate regional and national leadership conferences and conventions. Between site visits, planning meetings, and implementation, there is a significant amount of air travel to all over the US involved. This photo is from a convention held in San Antonio, for which the air travel on the return flight presented quite a few issues. Most of our staff left the day before my team did and got grounded on the connection through Atlanta due to a lightning storm which shut down flights for 24 hours. To avoid a mad scramble of rebookings, we altered our flight to connect through DC and rented a car to drive the last leg instead.",
+                  isImageLeft: false // Image on the right
+              },
+              {
+                  image: "static/img/img_3.jpg",
+                  title: "Abrea Jyles",
+                  content: "Abrea is the third contributor to this project.",
+                  isImageLeft: true // Image on the left
+              }
+          ];
+
+          // Create each container
+          containersData.forEach(data => {
+              createContainer(data.image, data.title, data.content, data.isImageLeft);
+          });
+      });
+  </script>
 
      <br/>
      <br/>

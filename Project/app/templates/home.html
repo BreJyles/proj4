@@ -18,7 +18,9 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Airline Satisfaction</a>
+          <a class="navbar-brand" href="/">
+            <img src="static/img/logo.png" alt="Logo" style="height: 50px;">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -54,15 +56,151 @@
     <!-- add spacing -->
     <br/>
 
-    <!-- Dashboard -->
-     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>This is the Home Page.</h1>
-            </div>
-        </div>
-     </div>
+    <!-- Text -->
+    <body>
 
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              document.body.style.backgroundColor = "#d1e7dd"; // Light mint green
+          });
+      </script>
+      <!-- Your content here -->
+      <h1 class="center">Airline Passenger Satisfaction</h1>
+   
+      <!--Text/image block-->
+  
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              // Create a new section
+              const section = document.createElement("section");
+              section.style.display = "flex"; // Use flexbox for layout
+              section.style.alignItems = "stretch"; // Stretch items to be the same height
+              section.style.margin = "20px"; // Add some margin
+              section.style.border = "1px solid #ddd"; // Optional border for visibility
+              section.style.borderRadius = "8px"; // Rounded corners
+              section.style.overflow = "hidden"; // Ensure no overflow
+      
+              // Create and add the image
+              const imgContainer = document.createElement("div");
+              imgContainer.style.flex = "0 0 40%"; // Image occupies 40% of the container
+              const img = document.createElement("img");
+              img.src = "static/img/img_1.png"; // Replace with your image path
+              img.alt = "picture"; // Alt text for accessibility
+              img.style.width = "100%"; // Full width of the container
+              img.style.height = "auto"; // Maintain aspect ratio
+              img.style.objectFit = "cover"; // Maintain aspect ratio while filling the space
+              imgContainer.appendChild(img);
+              section.appendChild(imgContainer);
+      
+              // Create and add the text block
+              const textBlock = document.createElement("div");
+              textBlock.style.flex = "1"; // Text block occupies remaining space
+              textBlock.style.padding = "10px"; // Add padding
+              textBlock.style.marginLeft = "20px"; // Add gap between image and text block
+              textBlock.style.display = "flex"; // Use flexbox for text alignment
+              textBlock.style.flexDirection = "column"; // Stack title and content vertically
+              textBlock.style.color = "white";
+              textBlock.style.backgroundColor = "#82d4be";
+      
+              // Set font sizes to responsive units
+              const title = document.createElement("h2");
+              title.innerText = "Traveling Today";
+              title.style.fontSize = "2.5vw"; // Responsive font size
+              title.style.color = "white"; // Set title color to white
+              title.style.margin = "0 0 10px 0"; // Margin for spacing
+      
+              const paragraph1 = document.createElement("p");
+              paragraph1.innerText = "Whether you’re traveling for work, business, or leisure—be it a sunny tropical paradise or a visit to your in-laws—how you get to your destination significantly influences your overall experience. The journey itself can set the tone for your trip, impacting your mood and excitement. From the moment you step into the airport to the comfort of your seat on the plane, every detail matters.";
+              paragraph1.style.fontSize = "1.5vw"; // Responsive font size
+              paragraph1.style.margin = "10px 0 0 0"; // No margin
+      
+              const paragraph2 = document.createElement("p");
+              paragraph2.innerText = "Efficient travel can mean more time for relaxation and exploration, while delays and discomfort can turn a dream vacation into a frustrating ordeal. Understanding the importance of a smooth journey allows you to appreciate each moment of your travels, making the destination all the more enjoyable.";
+              paragraph2.style.fontSize = "1.5vw"; // Responsive font size
+              paragraph2.style.marginTop = "10px"; // Margin for spacing
+  
+              const additionalParagraph = document.createElement("p");
+              additionalParagraph.innerText = "Each journey presents an opportunity to immerse yourself in diverse cultures, taste new cuisines, and meet fascinating people.";
+              additionalParagraph.style.fontSize = "1.5vw"; // Responsive font size
+              additionalParagraph.style.marginTop = "10px"; // Margin for spacing
+      
+              // Append elements to the text block
+              textBlock.appendChild(title);
+              textBlock.appendChild(paragraph1);
+              textBlock.appendChild(paragraph2);
+              textBlock.appendChild(additionalParagraph);
+              section.appendChild(textBlock);
+      
+              // Append the section to the body
+              document.body.appendChild(section);
+          });
+      </script>
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              // Create a new container for the images
+              const imageContainer = document.createElement("div");
+              imageContainer.style.display = "flex"; // Use flexbox for layout
+              imageContainer.style.justifyContent = "space-between"; // Space between the images
+              imageContainer.style.margin = "20px"; // Add some margin around the container
+  
+              // Array of image sources (replace these with your actual image paths)
+              const images = [
+                  "static/img/img_2.jpg",
+                  "static/img/img_3.jpg",
+                  "static/img/img_4.jpg"
+              ];
+  
+              // Loop through the image sources to create image elements
+              images.forEach(src => {
+                  const imgContainer = document.createElement("div");
+                  imgContainer.style.flex = "1"; // Each image takes equal space
+                  imgContainer.style.margin = "0 10px"; // Gap between images
+  
+                  const img = document.createElement("img");
+                  img.src = src; // Set image source
+                  img.alt = "Image"; // Alt text for accessibility
+                  img.style.width = "100%"; // Full width of the container
+                  img.style.height = "auto"; // Maintain aspect ratio
+                  img.style.objectFit = "cover"; // Cover the container
+  
+                  imgContainer.appendChild(img);
+                  imageContainer.appendChild(imgContainer);
+              });
+  
+              // Append the image container to the body
+              document.body.appendChild(imageContainer);
+          });
+      </script>
+      
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              // Create a new text box container
+              const textBox = document.createElement("div");
+              textBox.style.width = "90%"; // Occupy 90% of the screen width
+              textBox.style.margin = "20px auto"; // Center the box with auto margins
+              textBox.style.padding = "20px"; // Add padding for content
+              textBox.style.backgroundColor = "#82d4be"; // Background color
+              textBox.style.color = "white"; // Text color
+              textBox.style.borderRadius = "10px"; // Rounded corners
+              textBox.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.1)"; // Optional shadow for depth
+  
+              // Add some text content to the text box
+              textBox.innerHTML = `
+                  <h2 style='color: white;font-size: 28px; text-align: center;' >Our Project</h2>
+                  <p style='font-size: 22px;'>Our project aims to analyze and improve airline passenger satisfaction by exploring various factors that influence travelers’ experiences. Whether you’re flying for business, leisure, or visiting family, we believe that every aspect of your journey should contribute positively to your trip.</p>
+                  <p style='font-size: 22px; style='margin-top: 10px;'>Through comprehensive data analysis, including machine learning techniques, we seek to uncover insights into passenger preferences, pain points, and satisfaction levels. By leveraging advanced models like XGBoost and creating powerful dashboards using Tableau, we can visualize the relationships between various factors and passenger satisfaction.</p>
+                  `;
+  
+              // Append the text box to the body
+              document.body.appendChild(textBox);
+          });
+      </script>
+          
+           
+      </body>
+       <br/>
+       <br/>
+  </body>
      <br/>
      <br/>
 </body>
